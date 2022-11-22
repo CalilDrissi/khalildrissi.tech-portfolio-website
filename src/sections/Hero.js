@@ -65,6 +65,10 @@ const Part2 = styled.div`
   font-size: 22px;
   font-weight: 100;
   padding-top: 32px;
+
+  @media (max-width: 675px) {
+    margin-bottom:  20px;
+  }
 `;
 
 const Heading6 = styled.h6`
@@ -122,6 +126,10 @@ const SocialLink = styled.p`
   &:hover {
     text-decoration: underline;
     opacity: 0.5;
+  }
+
+  @media (max-width: 400px) {
+    font-size: 10px;
   }
 `;
 
@@ -225,16 +233,16 @@ const Hero = ({openIt}) => {
             <ProfileImg src={profile} alt="me" />
           </Photo>
           <SocialLink>
-            <TwitterOriginalIcon size="14px" color="white" />
+            <TwitterOriginalIcon size="12px" color="white" />
             <span><a href="https://twitter.com/calildrissi/" > Twitter</a> </span>
           </SocialLink>
           <SocialLink>
-            <GithubOriginalIcon size="15px" color="white" />
+            <GithubOriginalIcon size="12px" color="white" />
             <span><a href="https://github.com/calildrissi/" > Github</a> </span>
           </SocialLink>
 
           <SocialLink onClick={() => { openIt(true)}}>
-            <MdOutlineAlternateEmail size="15px" />
+            <MdOutlineAlternateEmail size="12px" />
             <span> Contact</span>
           </SocialLink>
         </Connect>
