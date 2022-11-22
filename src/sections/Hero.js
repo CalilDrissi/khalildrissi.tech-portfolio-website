@@ -67,8 +67,8 @@ const Part2 = styled.div`
   padding-top: 32px;
 
   @media (max-width: 675px) {
-    margin-bottom:  30px;
-    font-size: 16px ;
+    margin-bottom:  25px;
+    font-size: 18px ;
   }
 `;
 

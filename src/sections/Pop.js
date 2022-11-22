@@ -323,7 +323,7 @@ const Pop = ({ closePop }) => {
           X
         </CloseBtn>
         
-        {message && <div> <h2 style={{color: "r#f02daa"}}>{message.text}</h2></div>}
+        {message && <div> <h2>{message.text}</h2></div>}
         
         <Heading  >Leave Me a Message 📨</Heading>
         <p>Or send me an email to: <span style={{fontWeight: "lighter"}}>
