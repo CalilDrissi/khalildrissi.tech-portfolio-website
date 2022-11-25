@@ -71,25 +71,24 @@ const Linky = styled.span`
 `;
 
 
- 
  const FrameDiv = styled.div`
    border-radius: 2px;
-   transition: 0.2s ease-in-out opacity, 0.2s ease-in-out transform;
+   transition: 0.2s ease-in-out opacity, 0.1s ease-in-out transform;
    opacity: 0;
    padding: auto;
    position: absolute;
-   bottom: 50px;
+   bottom: 0px;
+   top: 5px;
    right: 0px;
    width: 210px;
-   height: 120px;
+   height: 200px;
    overflow-x: hidden;
     overflow-y: hidden;
    transform-origin: center bottom;
-   transform: translateX(-50%) translateY(10px) scale(0.9);
+   transform: translateX(0%) translateY(0px) scale(0.6);
 
-   
   img{
-    transform: scale(0.2);
+    transform: scale(0.12);
      transform-origin: 0 0;
    }
  `;
@@ -157,16 +156,16 @@ const Featured = ({ type, title, flutter, node, firebase, previewImg, desc, srcL
           <span> &nbsp; </span>
 
           <Linky  style={{ marginLeft: "5px" }}>
+            <a href={appLink} target="_blank" rel="noreferrer"> 
             <BsDoorOpen style={{ marginRight: "2px" }} />
-            <a href={appLink} target="_blank" rel="noreferrer"> Open</a>
+             Open
+             </a>
           </Linky>
 
           <FrameDiv>
             <img
               src={previewImg}
-              height="2000px"
-              width="1000px"
-              alt="screenshot"
+              alt="Preview"
             ></img>
           </FrameDiv> 
 

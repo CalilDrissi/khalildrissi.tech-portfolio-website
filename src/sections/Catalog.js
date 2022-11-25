@@ -3,6 +3,7 @@ import Featured from "../components/Featured";
 import Recent from "../components/Recent";
 import Post from "../components/Post";
 
+
 const Container = styled.div`
   /* this need pseud element after */
   /* -moz-box-shadow: inset 0 -100px 100px -100px white; */
@@ -77,7 +78,7 @@ const Catalog = () => {
         type="Android & iOS" 
         title="📍Places"  desc=" Mark places on the map, add a name and a picture over it, see all the saved places, marked on a map or through a list."
 
-        previewImg="https://images.unsplash.com/photo-1505156868547-9b49f4df4e04?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=832&q=80"  
+        previewImg="https://ik.imagekit.io/magicmenuv1/map-app.png?ik-sdk-version=javascript-1.4.3&updatedAt=1669382812382"
         flutter={true}  node={true}/>
         <Featured type="Desktop" title="Wise Words" 
         desc="Register a new account, login and view insightful quotes from database & explore, upvote, downvote and mark your favorite quotes."
