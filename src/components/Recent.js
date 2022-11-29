@@ -1,8 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import { BsFileCode } from "react-icons/bs";
-import { AndroidOriginal, FirebasePlain } from 'devicons-react';
-import * as Icons from "react-devicons";
+import { FirebasePlain } from 'devicons-react';
+import {FlutterOriginalIcon, DartOriginalIcon, MongodbOriginalIcon, NodejsOriginalIcon }from "react-devicons";
 
 const Box = styled.div`
   width: 100%;
@@ -67,7 +67,7 @@ const HeadingSix = styled.h6`
   line-height: 0.5;
 `;
 
-const Recent = ({ type, title, desc, flutter, firebase, node }) => {
+const Recent = ({ type, title, desc, flutter, firebase, mongodb, node }) => {
   return (
     <Box>
       <h2>
@@ -85,23 +85,32 @@ const Recent = ({ type, title, desc, flutter, firebase, node }) => {
         <div>
           <HeadingSix>Tech Stack:</HeadingSix>
           <Stack>
-            {/* Search how to pass component as props */}
+
+
             {
               flutter === true && 
               <>
-                   <Icons.FlutterOriginalIcon size="20px" color="white" />
-                   <Icons.DartOriginalIcon size="20px" color="white" />
-                   <AndroidOriginal size="20px" color="white" />
-                   {/* <XcodeOriginal size="20px" color="white" /> */}
+                   <FlutterOriginalIcon size="20px" color="white" />
+                   <DartOriginalIcon size="20px" color="white" />
+                
               </>
             }
+             {
+              mongodb === true &&
+              <>
+             
+              <MongodbOriginalIcon size="22px" color="white" />
+              </>
+            }
+
             {
               node === true &&
               <>
-              <Icons.MongodbOriginalIcon size="20px" color="white" />
-              <Icons.NodejsOriginalIcon size="22px" color="white" />
+             
+              <NodejsOriginalIcon size="22px" color="white" />
               </>
             }
+
             {
               firebase === true &&
               <FirebasePlain size="20px" color="#fae105"  />

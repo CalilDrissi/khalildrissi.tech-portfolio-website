@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { GithubOriginalIcon, TwitterOriginalIcon, FlutterOriginalIcon, DartOriginalIcon, GoOriginalIcon } from "react-devicons";
+import { GithubOriginalIcon, TwitterOriginalIcon, FlutterOriginalIcon, DartOriginalIcon, GoOriginalIcon, NodejsOriginalIcon } from "react-devicons";
 import Scrollspy from "react-scrollspy";
 import profile from "../assets/profile.png";
 import { MdOutlineAlternateEmail } from "react-icons/md";
@@ -202,7 +202,7 @@ const Hero = ({openIt}) => {
           <Part1> & I Develop Computer Software.</Part1>
           <Part2>
             I specialize in   <FlutterOriginalIcon size="14px" color="white" /> Flutter & <DartOriginalIcon size="14px" color="white" />  Dart, developing applications for mobile, web, and desktop.
-            I'm also well versed in full-stack web development with node.js and for general purpose programming I mainly use <GoOriginalIcon size="14px" color="white" /> Go. 
+            I'm also well versed in full-stack web development with <NodejsOriginalIcon size="14px" color="white" /> node.js and for general purpose programming I mainly use <GoOriginalIcon size="14px" color="white" /> Go. 
             
           </Part2>
         </div>

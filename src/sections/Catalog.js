@@ -2,6 +2,7 @@ import styled from "styled-components";
 import Featured from "../components/Featured";
 import Recent from "../components/Recent";
 import Post from "../components/Post";
+import { ReactOriginalIcon } from "react-devicons";
 
 
 const Container = styled.div`
@@ -15,7 +16,6 @@ const Container = styled.div`
   padding-right: 10px;
   margin-left: 0.5rem;
 
-
   @media (max-width: 990px) {
     grid-row-start: 2;
     width: 100%;
@@ -28,7 +28,6 @@ const Container = styled.div`
     grid-row-start: 2;
   }
 `;
-
 const BoxSquare = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -65,52 +64,144 @@ const HeadingCat = styled.h2`
   }
 `;
 
-const Catalog = () => {
-  
 
+
+
+const Copy = styled.span`
+
+@keyframes rotate {
+  0% {
+    -webkit-transform: rotate3d(0, 0, 1, 0deg);
+    transform: rotate3d(0, 0, 1, 0deg);
+  }
+  25% {
+    -webkit-transform: rotate3d(0, 0, 1, 90deg);
+    transform: rotate3d(0, 0, 1, 90deg);
+  }
+  50% {
+    -webkit-transform: rotate3d(0, 0, 1, 180deg);
+    transform: rotate3d(0, 0, 1, 180deg);
+  }
+  75% {
+    -webkit-transform: rotate3d(0, 0, 1, 270deg);
+    transform: rotate3d(0, 0, 1, 270deg);
+  }
+  100% {
+    -webkit-transform: rotate3d(0, 0, 1, 360deg);
+    transform: rotate3d(0, 0, 1, 360deg);
+  }
+}
+
+ .spin {
+  display: inline-block ;
+  -webkit-animation: rotate 5s normal linear infinite;
+  animation: rotate 5s normal linear infinite;
+
+}
+
+`;
+
+
+const Catalog = () => {
   return (
     <Container>
       <HeadingCat>Featured Projects</HeadingCat>
       <BoxRec id="section1">
-        <Featured 
-        appLink = '#'
-        srcLink="https://github.com/CalilDrissi/favorite_places.git"
-        type="Android & iOS" 
-        title="📍Places"  desc=" Mark places on the map, add a name and a picture over it, see all the saved places, marked on a map or through a list."
 
-        previewImg="https://ik.imagekit.io/magicmenuv1/map-app.png?ik-sdk-version=javascript-1.4.3&updatedAt=1669382812382"
-        flutter={true}  node={true}/>
-        <Featured type="Desktop" title="Wise Words" 
-        desc="Register a new account, login and view insightful quotes from database & explore, upvote, downvote and mark your favorite quotes."
-        firebase={true}
-        flutter={true}
+        <Featured
+          title="🥐 FoodMuse"
+          srcLink="https://github.com/CalilDrissi/food-muse"
+          appLink="#"
+          type="Desktop"
+          desc="Register a new account, login and view insightful quotes from database & explore, upvote, downvote and mark your favorite quotes."
+          flutter
+          sqlite
+          
         />
 
-        <Featured type="Android & iOS" title="Gourmet Meals" desc="Register you account, Search Gourmet Recipes , add the ingredients to the shopping cart, set shopping date and more."
-         firebase={true}
-         flutter={true}
+        <Featured
+          title="📍Placy"
+          srcLink="https://github.com/CalilDrissi/placy-flutter"
+          appLink="#"
+          type="Android & iOS"
+          desc=" Mark places on the map, add a name and a picture over it, see all the saved places, marked on a map or through a list."
+          previewImg="https://ik.imagekit.io/magicmenuv1/map-app.png?ik-sdk-version=javascript-1.4.3&updatedAt=1669382812382"
+          flutter
+          sqlite
         />
 
+        <Featured
+          title="🧦 WowSocks"
+          srcLink="https://github.com/CalilDrissi/wowsocks-shop"
+          appLink="#"
+          type="Android & iOS"
+          desc="Register you account, Search Gourmet Recipes , add the ingredients to the shopping cart, set shopping date and more."
+          flutter
+          node
+          redis
+          postgresql
+          
+          
+        />
       </BoxRec>
 
       <HeadingCat> Recent Projects </HeadingCat>
 
       <BoxSquare id="section2">
-        <Recent 
-          title="I.M chat" 
-          type="Android"  
-          flutter ={true}
-          firebase={true}
-          desc="Instant messaging app to chat with friends in real time"/>
-        {/* <Recent title="coll" type="desktop" />
-        <Recent title="coll" type="desktop" />
-        <Recent title="coll" type="Android" /> */}
+        <Recent
+          title="I.M chat"
+          desc="Group & private messaging in real time with video call and media sharing"
+          type="Android & iOS"
+          flutter
+
+        
+        
+        />
+        <Recent
+          title="Int'l Radio"
+          desc="Listen international radio chanels from all around the globe"
+          type="Windows & MacOS"
+          flutter
+
+        />
+        <Recent
+          title="Whac-A-Mole"
+          desc="Catchy classic game build with flutter"
+          type="Android & iOS"
+          flutter
+
+        />
+        <Recent
+          title="Rss Client"
+          desc="Check your favorite website and blogs latest publications"
+          type="Android"
+          flutter
+
+        />
+        <Recent
+          title="Pos app"
+          desc="Point of sale app for shops with data visualization for transactions"
+          type="Android & iOS"
+          flutter
+
+        />
+        <Recent
+          title="Mediatek"
+          desc="Cloud librairy for your media files images, audio, video, books etc.."
+          type="Web, MacOS &Windows "
+          flutter
+
+        />
       </BoxSquare>
 
       <HeadingCat> Tech Articles </HeadingCat>
-      
+
       <BoxRec id="section3">
-        <Post title="Build a Flutter & Strapi Mobile App" platform="Dev.to" desc="Create, Retrieve, Update and Delete (CRUD) application using Flutter and Strapi." />
+        <Post
+          title="Build a Flutter & Strapi Mobile App"
+          desc="Create, Retrieve, Update and Delete (CRUD) application using Flutter and Strapi."
+          platform="Dev.to"
+        />
         {/* <Post title="Scaling" platform="Medium" /> */}
       </BoxRec>
 
@@ -124,7 +215,8 @@ const Catalog = () => {
         }}
       >
         {" "}
-        <p>Khalil Drissi &copy; 2022</p>
+      
+        <p>  <Copy >Built with <span className="spin"><ReactOriginalIcon size="11px" /></span> </Copy>  Khalil Drissi &copy; 2022</p>
       </footer>
     </Container>
   );

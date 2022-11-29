@@ -1,8 +1,8 @@
 import styled from "styled-components";
-import  *  as Icons from "react-devicons";
-import { AndroidOriginal, XcodeOriginal, FirebasePlain } from 'devicons-react'
 import { BsFileCode } from "react-icons/bs";
-import { BsDoorOpen } from "react-icons/bs";
+// import { BsDoorOpen } from "react-icons/bs";
+import { FirebasePlain, PostgresqlOriginal, SqliteOriginal } from 'devicons-react'
+import  {FlutterOriginalIcon, DartOriginalIcon, NodejsOriginalIcon, MongodbOriginalIcon, GoOriginalIcon, SocketioOriginalIcon, RedisOriginalIcon} from "react-devicons";
 
 const Box = styled.div`
   overflow-y: hidden;
@@ -71,27 +71,27 @@ const Linky = styled.span`
 `;
 
 
- const FrameDiv = styled.div`
-   border-radius: 2px;
-   transition: 0.2s ease-in-out opacity, 0.1s ease-in-out transform;
-   opacity: 0;
-   padding: auto;
-   position: absolute;
-   bottom: 0px;
-   top: 5px;
-   right: 0px;
-   width: 210px;
-   height: 200px;
-   overflow-x: hidden;
-    overflow-y: hidden;
-   transform-origin: center bottom;
-   transform: translateX(0%) translateY(0px) scale(0.6);
+//  const FrameDiv = styled.div`
+//    border-radius: 2px;
+//    transition: 0.2s ease-in-out opacity, 0.1s ease-in-out transform;
+//    opacity: 0;
+//    padding: auto;
+//    position: absolute;
+//    bottom: 0px;
+//    top: 5px;
+//    right: 0px;
+//    width: 210px;
+//    height: 200px;
+//    overflow-x: hidden;
+//     overflow-y: hidden;
+//    transform-origin: center bottom;
+//    transform: translateX(0%) translateY(0px) scale(0.6);
 
-  img{
-    transform: scale(0.12);
-     transform-origin: 0 0;
-   }
- `;
+//   img{
+//     transform: scale(0.12);
+//      transform-origin: 0 0;
+//    }
+//  `;
 
 const HeadingSecondary = styled.h2`
   margin-bottom: 7px;
@@ -101,7 +101,7 @@ const HeadingSix = styled.h6`
   line-height: 0.5;
 `;
 
-const Featured = ({ type, title, flutter, node, firebase, previewImg, desc, srcLink, appLink }) => {
+const Featured = ({ type, title, flutter, node, firebase, previewImg, desc, srcLink, appLink, go,  postgresql , sqlite, socketio, redis, mongodb}) => {
 
   return (
     <Box>
@@ -127,22 +127,50 @@ const Featured = ({ type, title, flutter, node, firebase, previewImg, desc, srcL
             {
               flutter === true && 
               <>
-                   <Icons.FlutterOriginalIcon size="20px" color="white" />
-                   <Icons.DartOriginalIcon size="20px" color="white" />
-                   <AndroidOriginal size="20px" color="white" />
-                   <XcodeOriginal size="20px" color="white" />
-              </>
-            }
-            {
-              node === true &&
-              <>
-              <Icons.MongodbOriginalIcon size="20px" color="white" />
-              <Icons.NodejsOriginalIcon size="22px" color="white" />
+                   <FlutterOriginalIcon size="20px" color="white" />
+                   <DartOriginalIcon size="20px" color="white" />
               </>
             }
             {
               firebase === true &&
               <FirebasePlain size="20px" color="#fae105"  />
+            }
+
+            {
+              postgresql === true &&
+              <PostgresqlOriginal size="20px"   />
+            }
+            {
+              socketio=== true &&
+              <SocketioOriginalIcon size="20px"   />
+            }
+
+            {
+              redis=== true &&
+              <RedisOriginalIcon size="20px"   />
+            }
+
+            {
+              mongodb === true &&
+              <MongodbOriginalIcon size="20px"   />
+            }
+
+            {
+              sqlite === true &&
+              <SqliteOriginal size="20px"   />
+            }
+
+            {
+              go === true &&
+              <>
+              <GoOriginalIcon size="22px" color="white" />
+              </>
+            }
+            {
+              node === true &&
+              <>
+              <NodejsOriginalIcon size="22px" color="white" />
+              </>
             }
            
           </Stack>
@@ -151,11 +179,11 @@ const Featured = ({ type, title, flutter, node, firebase, previewImg, desc, srcL
           <Linky>
             <BsFileCode style={{ marginRight: "2px" }} />
             <a href={srcLink} target="_blank" rel="noreferrer">  Code</a>
-           
           </Linky>
+
           <span> &nbsp; </span>
 
-          <Linky  style={{ marginLeft: "5px" }}>
+          {/* <Linky  style={{ marginLeft: "5px" }}>
             <a href={appLink} target="_blank" rel="noreferrer"> 
             <BsDoorOpen style={{ marginRight: "2px" }} />
              Open
@@ -167,7 +195,9 @@ const Featured = ({ type, title, flutter, node, firebase, previewImg, desc, srcL
               src={previewImg}
               alt="Preview"
             ></img>
-          </FrameDiv> 
+          </FrameDiv>  */}
+
+
 
         </Check>
       </div>
