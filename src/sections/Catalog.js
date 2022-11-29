@@ -159,14 +159,14 @@ const Catalog = () => {
         />
         <Recent
           title="Int'l Radio"
-          desc="Listen international radio chanels from all around the globe"
+          desc="Listen to international radio channels from all around the globe"
           type="Windows & MacOS"
           flutter
 
         />
         <Recent
           title="Whac-A-Mole"
-          desc="Catchy classic game build with flutter"
+          desc="Catchy classic game built with flutter"
           type="Android & iOS"
           flutter
 
