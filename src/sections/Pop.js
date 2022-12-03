@@ -5,12 +5,13 @@ import axios from "axios";
 import ReCAPTCHA from "react-google-recaptcha";
 
 const Popup = styled.div`
+ 
   position: fixed;
   top: 0;
   z-index: 10;
   background: rgba(12, 12, 12, 0.9);
   width: 100vw;
-  height: 90vh;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -23,9 +24,9 @@ const Box = styled.div`
 /* z-index: 100 ; */
   /* display: flex ;
   justify-content: space-between ; */
-
+  overflow-y: scroll;
   width: 45vw;
-  min-height: 75vh ;
+  height: 75vh ;
   position: relative;
  background: #000 ;
 background: -webkit-linear-gradient(to top, #333333, rgb(25, 25, 25));  /* Chrome 10-25, Safari 5.1-6 */
