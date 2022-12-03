@@ -10,7 +10,7 @@ const Popup = styled.div`
   z-index: 10;
   background: rgba(12, 12, 12, 0.9);
   width: 100vw;
-  height: 100vh;
+  height: 90vh;
   display: flex;
   justify-content: center;
   align-items: center;
