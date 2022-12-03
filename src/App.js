@@ -37,7 +37,7 @@ body{
     position:relative ;
     background: #121212;
     color: #fff ;
-    font-family: Kanit;
+    font-family: Kanit, sans-serif;
 }
 
 `;
