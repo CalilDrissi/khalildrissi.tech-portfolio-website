@@ -68,9 +68,7 @@ const HeadingCat = styled.h2`
 
 
 const Copy = styled.span`
-display: flex;
-justify-content: center;
-align-items: center;
+
 
 @keyframes rotate {
   from {
@@ -82,6 +80,9 @@ align-items: center;
 }
 
  .spin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   display: inline-block ;
   animation-name: rotate;
   animation-duration: 5000ms;
