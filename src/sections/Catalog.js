@@ -79,7 +79,7 @@ const Copy = styled.span`
     }
 }
 
- .spin {
+ .spin > *{
   padding: 0;
   margin: 0;
   transform: translate(-50%, -50%);
