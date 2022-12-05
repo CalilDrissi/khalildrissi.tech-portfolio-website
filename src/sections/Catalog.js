@@ -129,7 +129,7 @@ const Catalog = () => {
           srcLink="https://github.com/CalilDrissi/wowsocks-shop"
           appLink="#"
           type="Android & iOS"
-          desc="Ecommerce mobile app for quirky socks, ties, underwear and accessories for men"
+          desc="Ecommerce mobile app for quirky socks, ties, underwear and accessories for men."
           flutter
           node
           redis
@@ -210,7 +210,7 @@ const Catalog = () => {
       >
         {" "}
       
-        <p>  <Copy >Built with <span className="spin"><ReactOriginalIcon size="11px" /></span> </Copy>  Khalil Drissi &copy; 2022</p>
+        <p>  <Copy >Built with <span className="spin"><ReactOriginalIcon size="10px" /></span> </Copy>  - Khalil Drissi &copy; 2022</p>
       </footer>
     </Container>
   );
