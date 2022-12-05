@@ -108,6 +108,8 @@ const Catalog = () => {
           desc="Register you account, Search Gourmet Recipes , add the ingredients to the shopping cart, set shopping date and more."
           flutter
           sqlite
+          node
+          mongodb
           
         />
 
@@ -127,7 +129,7 @@ const Catalog = () => {
           srcLink="https://github.com/CalilDrissi/wowsocks-shop"
           appLink="#"
           type="Android & iOS"
-          desc="Register a new account, login and view insightful quotes from database & explore, upvote, downvote and mark your favorite quotes."
+          desc="Ecommerce mobile app for quirky socks, ties, underwear and accessories for men"
           flutter
           node
           redis
