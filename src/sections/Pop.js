@@ -26,7 +26,7 @@ const Box = styled.div`
   justify-content: space-between ; */
   overflow-y: scroll;
   width: 45vw;
-  height: 75vh ;
+  height: 85vh ;
   position: relative;
  background: #000 ;
 background: -webkit-linear-gradient(to top, #333333, rgb(25, 25, 25));  /* Chrome 10-25, Safari 5.1-6 */
