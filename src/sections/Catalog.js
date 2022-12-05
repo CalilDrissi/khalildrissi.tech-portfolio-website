@@ -210,7 +210,7 @@ const Catalog = () => {
       >
         {" "}
       
-        <p>  <Copy >Built with <span className="spin"><ReactOriginalIcon size="10px" /></span> </Copy>  - Khalil Drissi &copy; 2022</p>
+        <p>  <Copy >Built with <span className="spin"><ReactOriginalIcon size="10px" /></span> </Copy>  Khalil Drissi &copy; 2022</p>
       </footer>
     </Container>
   );
