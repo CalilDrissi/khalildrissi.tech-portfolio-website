@@ -105,7 +105,7 @@ const Catalog = () => {
           srcLink="https://github.com/CalilDrissi/food-muse"
           appLink="#"
           type="Desktop"
-          desc="Register a new account, login and view insightful quotes from database & explore, upvote, downvote and mark your favorite quotes."
+          desc="Register you account, Search Gourmet Recipes , add the ingredients to the shopping cart, set shopping date and more."
           flutter
           sqlite
           
@@ -127,7 +127,7 @@ const Catalog = () => {
           srcLink="https://github.com/CalilDrissi/wowsocks-shop"
           appLink="#"
           type="Android & iOS"
-          desc="Register you account, Search Gourmet Recipes , add the ingredients to the shopping cart, set shopping date and more."
+          desc="Register a new account, login and view insightful quotes from database & explore, upvote, downvote and mark your favorite quotes."
           flutter
           node
           redis
