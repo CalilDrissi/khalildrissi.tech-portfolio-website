@@ -174,7 +174,7 @@ const TooltipCard = styled.span`
     color: #fff;
     background-color: rgba(0, 0, 0, 0.8);
     width: 160px;
-    padding: 8px 8px;
+    padding: 8px 12px;
     &:before {
       border-color: transparent transparent rgba(0, 0, 0, 0.8)
         rgba(0, 0, 0, 0.8);
