@@ -201,7 +201,7 @@ const Hero = ({openIt}) => {
           </Heading>
           <Part1> & I Develop Computer Software.</Part1>
           <Part2>
-            I'm currently working with <FlutterOriginalIcon size="14px" color="white" /> Flutter & <DartOriginalIcon size="14px" color="white" />  Dart, developing applications for mobile, web, and desktop. I'm also proficient in full-stack web development with <NodejsOriginalIcon size="14px" color="white" /> node.js. For general purpose programming I mainly work with <GoOriginalIcon size="14px" color="white" /> Go. 
+            I'm currently working with <FlutterOriginalIcon size="14px" color="white" /> Flutter & <DartOriginalIcon size="14px" color="white" />  Dart, developing applications for mobile and desktop. I'm also proficient in full-stack web development with <NodejsOriginalIcon size="14px" color="white" /> node.js. For general purpose programming I mainly work with <GoOriginalIcon size="14px" color="white" /> Go. 
           </Part2>
         </div>
 
