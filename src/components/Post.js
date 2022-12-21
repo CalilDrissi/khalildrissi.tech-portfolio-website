@@ -44,12 +44,14 @@ const Heading5 = styled.h5`
   -webkit-text-fill-color: transparent;
 `;
 
-const Post = ({ title, platform , desc}) => {
+const Post = ({ title, platform , desc, link}) => {
   return (
     <Container>
       <Title>
         <Heading5>{platform}</Heading5>
-        {title}
+        <a href={link}> 
+        {title} 
+        </a>
       </Title>
       <SubTitle>
         {desc}
