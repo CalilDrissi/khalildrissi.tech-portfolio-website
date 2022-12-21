@@ -192,9 +192,10 @@ const Catalog = () => {
 
       <BoxRec id="section3">
         <Post
-          title="Build a Flutter & Strapi Mobile App"
-          desc="Create, Retrieve, Update and Delete (CRUD) application using Flutter and Strapi."
+          title="Quick guide for easy postgres database replication"
+          desc="Replication is one of the most important aspects of achieving high availability. Any unexpected failures on a database server could cause costly downtimes..."
           platform="Dev.to"
+          link="https://dev.to/caldrissi/postgres-replication-with-ease-33hc"
         />
         {/* <Post title="Scaling" platform="Medium" /> */}
       </BoxRec>
