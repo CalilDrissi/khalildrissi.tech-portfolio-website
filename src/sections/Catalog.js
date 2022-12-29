@@ -198,6 +198,12 @@ const Catalog = () => {
           link="https://dev.to/caldrissi/postgres-replication-with-ease-33hc"
         />
         {/* <Post title="Scaling" platform="Medium" /> */}
+        <Post
+          title="How to build a UDP server & client using Go"
+          desc=" create a UDP server that will listen for messages from clients, add their IPs to its list, and broadcast messages to each of the previously seen clients."
+          platform="Medium.com"
+          link="https://medium.com/@khalildrissi/udp-server-client-using-go-fac2e4d92001"
+        />
       </BoxRec>
 
       <footer
