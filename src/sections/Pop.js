@@ -328,7 +328,7 @@ const Pop = ({ closePop }) => {
         
         <Heading  >Leave Me a Message 📨</Heading>
         <p>Or send me an email to: <span style={{fontWeight: "lighter"}}>
-          <a href = "mailto: mail@khalildrissi.tech ">mail@khalildrissi.tech</a>
+          <a href = "mailto: mail@khalildrissi.tech ">calil@drissi.org</a>
           </span>
           </p>
         
