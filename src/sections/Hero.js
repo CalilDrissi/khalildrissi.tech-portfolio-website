@@ -201,7 +201,7 @@ const Hero = ({openIt}) => {
           </Heading>
           <Part1> & I Develop Computer Software.</Part1>
           <Part2>
-            I like building all kind of computer programs, system software, web apps, games, mobile apps, compilers. My approach is language & technologie agnostic; I let the project choose the technologies that suit it best.
+            I like building all kinds of computer programs, system software, web apps, games, mobile apps, compilers. My approach is language & technologie agnostic; I let the project choose the technologies that suit it best.
           </Part2>
         </div>
 
