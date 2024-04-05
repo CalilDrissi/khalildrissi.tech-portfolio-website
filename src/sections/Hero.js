@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { GithubOriginalIcon, TwitterOriginalIcon, FlutterOriginalIcon, DartOriginalIcon, GoOriginalIcon, NodejsOriginalIcon } from "react-devicons";
+import { GithubOriginalIcon, TwitterOriginalIcon  } from "react-devicons";
 import Scrollspy from "react-scrollspy";
 import profile from "../assets/profile.png";
 import { MdOutlineAlternateEmail } from "react-icons/md";
