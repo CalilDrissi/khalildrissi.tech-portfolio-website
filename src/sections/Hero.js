@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { GithubOriginalIcon, TwitterOriginalIcon, LlvmOriginal, Html5OriginalWordmark, AndroidOriginal  } from "react-devicons";
+import { GithubOriginalIcon, TwitterOriginalIcon} from "react-devicons";
 import Scrollspy from "react-scrollspy";
 import profile from "../assets/profile.png";
 import { MdOutlineAlternateEmail } from "react-icons/md";
@@ -201,7 +201,7 @@ const Hero = ({openIt}) => {
           </Heading>
           <Part1> & I Develop Computer Software.</Part1>
           <Part2>
-            I like building all kind of computer programs, system software, web apps <Html5OriginalWordmark size="12px"/> , games , mobile apps <AndroidOriginal size="12px"/>, compilers <LlvmOriginal size="12px"/>. I consider myself a language & technologie agnostic programmer. I let the project choose the technologies that suit it best.
+            I like building all kind of computer programs, system software, web apps, games , mobile apps, compilers. I consider myself a language & technologie agnostic programmer. I let the project choose the technologies that suit it best.
           </Part2>
         </div>
 
